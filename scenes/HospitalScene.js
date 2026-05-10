@@ -52,6 +52,15 @@ export default class HospitalScene extends Phaser.Scene {
     this.createDoctorSprite();
     this.createNurseSprite();
 
+    // EXIT sign text + arrow — world space, above door
+    this.add.text(456, 316, '→ EXIT', {
+      fontFamily: 'Courier New',
+      fontSize:   '7px',
+      color:      '#44ee66',
+      stroke:     '#0e2a0e',
+      strokeThickness: 2
+    }).setOrigin(0.5, 0).setDepth(20);
+
     this.player = this.physics.add.sprite(240, 140, 'san');
     this.player.body.setSize(20, 28);
     this.player.setCollideWorldBounds(true);
@@ -212,11 +221,11 @@ export default class HospitalScene extends Phaser.Scene {
     g.closePath();
     g.fillPath();
 
-    // "EXIT" sign above door
-    g.fillStyle(0x1a3a1a);
-    g.fillRect(444, 320, 28, 12);
-    g.fillStyle(0x22cc44, 0.7);
-    g.fillRect(446, 322, 24, 8);
+    // EXIT sign box above door
+    g.fillStyle(0x0e2a0e);
+    g.fillRect(432, 314, 48, 18);
+    g.lineStyle(1, 0x22aa33, 0.9);
+    g.strokeRect(432, 314, 48, 18);
 
   }
 
