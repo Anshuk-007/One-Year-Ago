@@ -417,8 +417,7 @@ export default class AccidentSiteScene extends Phaser.Scene {
     // Final dialogue — San was driving
     addDialogue('San', 'She waited for me.');
     addDialogue('San', 'She came out to meet me.');
-    addDialogue('San', 'She was with me');
-    addDialogue('San', '...');
+    addDialogue('San', 'She was with me, right here.');
     addDialogue('San', '...');
     addDialogue('San', 'I was the one driving.');
 
