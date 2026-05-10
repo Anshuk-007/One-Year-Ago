@@ -53,12 +53,12 @@ export default class HospitalScene extends Phaser.Scene {
     this.createNurseSprite();
 
     // EXIT sign text + arrow — world space, above door
-    this.add.text(456, 316, '→ EXIT', {
+    this.add.text(456, 308, '→ EXIT', {
       fontFamily: 'Courier New',
-      fontSize:   '7px',
+      fontSize:   '11px',
       color:      '#44ee66',
-      stroke:     '#0e2a0e',
-      strokeThickness: 2
+      stroke:     '#0a1a0a',
+      strokeThickness: 3
     }).setOrigin(0.5, 0).setDepth(20);
 
     this.player = this.physics.add.sprite(240, 140, 'san');
