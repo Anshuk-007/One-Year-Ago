@@ -1,0 +1,116 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ONE YEAR AGO</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.60.0/phaser.min.js"></script>
+</head>
+<body>
+
+<div id="gc">
+
+  <!-- ── TITLE SCREEN ── -->
+  <div id="title-screen">
+    <div class="t-eyebrow">a story about looking for someone</div>
+    <div class="t-main">
+      <span class="t-one">ONE</span>
+      <span class="t-year">YEAR</span>
+      <span class="t-ago">AGO</span>
+    </div>
+    <div class="t-tagline">she was here &nbsp;·&nbsp; you are sure of it</div>
+    <button id="start-btn">[ press to begin ]</button>
+  </div>
+
+  <!-- ── CHAPTER CARD ── -->
+  <div id="chapter-card">
+    <div class="cc-eyebrow">Chapter One</div>
+    <div class="cc-rule"></div>
+    <div class="cc-title">White Ceiling</div>
+  </div>
+
+  <!-- ── NARRATION OVERLAY (San's inner monologue - white text on black) ── -->
+  <div id="narration">
+    <p id="narration-text"></p>
+  </div>
+
+  <!-- ── PHASER CANVAS ── -->
+  <div id="phaser-game"></div>
+
+  <!-- ── DIALOGUE BOX (Blasphemous style) ── -->
+  <div id="dialogue-box">
+    <div id="dlg-inner">
+
+      <!-- Portrait + speaker name -->
+      <div id="dlg-portrait-wrap">
+        <div id="speaker-name">—</div>
+        <canvas id="dlg-portrait" width="108" height="124"></canvas>
+      </div>
+
+      <!-- Text + choices -->
+      <div id="dlg-content">
+        <div id="dialogue-text"></div>
+        <div id="dlg-choices"></div>
+        <div id="continue">▼ CONTINUE</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── PHONE UI ── -->
+  <div id="phone-ui" class="hidden">
+    <div id="phone-frame">
+
+      <div id="phone-header">
+        <span id="phone-back">←</span>
+        <span id="phone-contact">❤️</span>
+      </div>
+
+      <div id="chat-window">
+        <!-- Messages injected by PhoneSystem -->
+      </div>
+
+      <div id="phone-footer">
+        <span id="phone-close-hint">[ P ] close</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── MEMORY FLASH OVERLAY ── -->
+  <div id="memory-flash"></div>
+
+  <!-- ── INTERACT HINT ── -->
+  <div id="interact-hint"></div>
+
+  <!-- ── HUD (visible after cutscene) ── -->
+  <div id="hud" class="hidden">
+    <button id="btn-journal">📓</button>
+    <button id="btn-phone">📱</button>
+  </div>
+
+  <!-- ── MOBILE DPAD ── -->
+  <div id="dpad" class="hidden">
+    <div id="dpad-grid">
+      <div class="dp-empty"></div>
+      <div class="dp-btn" id="dp-up">▲</div>
+      <div class="dp-empty"></div>
+      <div class="dp-btn" id="dp-left">◀</div>
+      <div class="dp-empty"></div>
+      <div class="dp-btn" id="dp-right">▶</div>
+      <div class="dp-empty"></div>
+      <div class="dp-btn" id="dp-down">▼</div>
+      <div class="dp-empty"></div>
+    </div>
+  </div>
+  <div id="dp-act" class="hidden">E</div>
+
+</div>
+
+<script type="module" src="main.js"></script>
+
+</body>
+</html>
+```
