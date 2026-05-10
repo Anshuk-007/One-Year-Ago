@@ -196,6 +196,51 @@ const PORTRAITS = {
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText('?', 24, 26);
+  },
+
+  'Nurse': (ctx) => {
+    ctx.clearRect(0, 0, 48, 48);
+    ctx.fillStyle = '#0c0e12'; ctx.fillRect(0, 0, 48, 48);
+    ctx.fillStyle = '#141820'; ctx.fillRect(0, 28, 48, 20);
+
+    // Hair — brown, pulled back
+    const p = (x, y, w, h, col) => { ctx.fillStyle = col; ctx.fillRect(x*3, y*3, w*3, h*3); };
+
+    p(3, 0, 10, 2, '#3a2010');
+    p(2, 1,  1, 4, '#3a2010');
+    p(13,1,  1, 4, '#3a2010');
+
+    // Nurse cap
+    p(4, 0, 8, 2, '#e8e4de');
+    p(7, 0, 2, 1, '#b02020'); // red cross stripe
+
+    // Face
+    p(3, 2, 10, 7, '#c8906a');
+
+    // Eyes — kind
+    p(4, 4, 2, 2, '#e0dcd6');
+    p(9, 4, 2, 2, '#e0dcd6');
+    p(4, 4, 1, 1, '#3a2818');
+    p(9, 4, 1, 1, '#3a2818');
+
+    // Nose
+    p(7, 7, 2, 1, '#a87050');
+
+    // Mouth — slight smile
+    p(5, 9, 6, 1, '#906040');
+    p(5, 9, 1, 1, '#c07050');
+    p(10,9, 1, 1, '#c07050');
+
+    // Ears
+    p(2, 4, 1, 3, '#a87050');
+    p(13,4, 1, 3, '#a87050');
+
+    // Neck
+    p(6,10, 4, 2, '#a87050');
+
+    // Scrubs — teal
+    p(0,12,16, 4, '#2a7a78');
+    p(5,12, 6, 2, '#e8e4de'); // collar
   }
 
 };
