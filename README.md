@@ -71,4 +71,4 @@ This is a prototype, so the list is long. Rough plan, in order:
 
 ## About
 
-Made by Anshuk Chaturvedi for the Devpost AI Game Week 2026 hackathon (May 2026). Still in development.
+I am Anshuk Chaturvedi and I made this for the Devpost AI Game Week 2026 hackathon (May 2026). Still in development.
