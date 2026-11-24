@@ -49,7 +49,7 @@ The prototype is deployed on GitHub Pages, so there's nothing to install. Open i
 
 - Phaser.js
 - JavaScript
-- Built with AI assistance: mostly Claude and ChatGPT, for code and [add if it also made the art, sprites, or dialogue]
+- Built with AI assistance: mostly Claude and ChatGPT.
 - My part: story and concept, scene structure, design decisions, testing and fixing bugs
 
 ## Roadmap
