@@ -6,7 +6,7 @@ A narrative walking game, "a story about looking for someone." Started as a Phas
 
 **Play the prototype:** [https://anshuk-007.github.io/One-Year-Ago/](https://anshuk-007.github.io/One-Year-Ago/)
 
-![Gameplay screenshot](add-screenshot-path-here.png)
+
 
 ## The idea
 
